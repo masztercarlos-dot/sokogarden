@@ -46,7 +46,7 @@ const Signup = () => {
                 <input type="password"placeholder='enter password'className='form-control'onChange={(e)=>setPassword(e.target.value)} /><br /><br />
                 <input type="phone" placeholder='enter phone' className='form-control'onChange={(e)=>setPhone(e.target.value)} /><br /><br />
                 <button type='submit' className="btn  btn-primary w-100">Signup</button><br /><br />
-                <p>already an account ? <Link to ="Signin">Signin</Link></p>
+                <p>already an account ? <Link to ="/signin">Signin</Link></p>
             </form>
         </div>
     </div>
