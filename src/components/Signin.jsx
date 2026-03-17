@@ -41,7 +41,7 @@ catch (error){
           <input type="email" placeholder='enter email' className='form-control' onChange={(e)=>setEmail (e.target.value)}/><br /><br />
           <input type="password" placeholder='enter password'className='form-control' onChange={(e)=>setPassword (e.target.value)}/><br /><br />
           <button type="submit" className='btn btn-primary w-100'>Signin</button>
-          <p>You don't have an account ? <Link to ="Signup" >Signup</Link></p>
+          <p>You don't have an account ? <Link to ="/signup" >Signup</Link></p>
           
         </form>
       </div>

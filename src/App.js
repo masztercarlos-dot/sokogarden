@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Routes, Route,Link } from 'react-router-dom';
 import Signup from './components/Signup';
 import Signin from './components/Signin' ;
+import Addproduct from './components/Addproduct';
+import Getproducts from './components/Getproducts';
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,12 +17,18 @@ function App() {
       </header>
 
       <nav>
-        <Link to ="/signup">signup</Link>
-        <Link to ="/Signin">signin</Link>
+        <Link to ="/" className='btn btn-info'>getproducts</Link>
+        <Link to ="/signup" className='btn btn-info'>signup</Link>
+        <Link to ="/signin" className='btn btn-info'>signin</Link>
+        <Link to ="/addproduct" className='btn btn-info'>addproduct</Link>
+
       </nav>
       <Routes>
         <Route path='signup' element={<Signup />} />
         <Route path="signin" element={<Signin/>}/>
+        <Route path="addproduct" element={<Addproduct/>}/>
+        <Route path="/" element={<Getproducts/>}/>
+
       </Routes>
     </div>
     </BrowserRouter>
