@@ -6,6 +6,7 @@ import Signup from './components/Signup';
 import Signin from './components/Signin' ;
 import Addproduct from './components/Addproduct';
 import Getproducts from './components/Getproducts';
+import Makepayments from './components/Makepayments';
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
 
       </nav>
       <Routes>
-        <Route path='signup' element={<Signup />} />
-        <Route path="signin" element={<Signin/>}/>
-        <Route path="addproduct" element={<Addproduct/>}/>
         <Route path="/" element={<Getproducts/>}/>
+        <Route path='/signup' element={<Signup />} />
+        <Route path="/signin" element={<Signin/>}/>
+        <Route path="/addproduct" element={<Addproduct/>}/>
+        <Route path="/makepayment" element={<Makepayments/>}/>
 
       </Routes>
     </div>
