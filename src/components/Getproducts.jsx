@@ -27,7 +27,7 @@ useEffect(()=>{
   console.log(products);
   const imagepath ="http://carloskifaru.alwaysdata.net/static/images/"  
   return (
-    <div className="container-fluid">
+    <div className="container-fluid lobster-two-regular">
         <div className="row">
             <h1 className='text-info'>avilable products</h1>
             {/* bind the states  */}

@@ -14,7 +14,7 @@ function App() {
     
     <div className="App">
       <header className="App-header">
-      <h1>Welcome to sokogarden</h1>
+      <h1 className='lobster-two-regular'>Welcome to sokogarden</h1>
       </header>
 
       <nav>
